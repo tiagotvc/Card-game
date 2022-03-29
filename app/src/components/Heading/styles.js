@@ -22,7 +22,7 @@ const textSize = {
 export const Text = styled.h1`
     ${({size, uppercase, color }) => css`
     color: ${color};
-    ${textSize[size]};
+    ${textSize[size]};  ${textSize[size]};
     ${textCase(uppercase)};
     `}
 `;

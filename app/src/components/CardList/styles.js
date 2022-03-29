@@ -21,7 +21,4 @@ export const Container = styled.ul`
         grid-template-columns:1fr 1fr;
     }
         
-
-
-
 `
