@@ -29,3 +29,6 @@ Heading.propTypes = {
     uppercase: P.bool.isRequired,
     color: P.node.isRequired
   };
+
+  //prevent jest error
+export default Heading;
