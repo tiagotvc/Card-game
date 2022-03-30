@@ -18,6 +18,7 @@ export const CardList = (props) => {
                                 title={card.attributes.canonicalTitle}
                                 description={description}
                                 numb={card.number}
+                                id={index}
                             />
                         </li>
                     )

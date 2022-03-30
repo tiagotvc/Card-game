@@ -3,10 +3,10 @@ import P from 'prop-types';
 import * as Styled from './styles';
 import { Heading } from '../Heading/Heading';
 
-export const Card = ({flipped, image, title, description, numb}) => {
+export const Card = ({flipped, image, title, description, numb, id}) => {
 
     return (
-        <Styled.Container flipped={flipped? "flipped" : "normal"} image={image}>
+        <Styled.Container flipped={flipped? "flipped" : "normal"} image={image} id={id}>
             {!flipped &&
                 <div className="card_info">
                     <span>{numb}</span>
@@ -32,6 +32,6 @@ export const Card = ({flipped, image, title, description, numb}) => {
 }
 
 Card.propTypes = {
-    flipped: P.oneOf(['normal', 'flipped']).isRequired,
+    flipped: P.bool.isRequired,
   };
 

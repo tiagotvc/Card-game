@@ -13,3 +13,7 @@ export const Button = ({children, onClick, disabled}) => {
 Button.propTypes = {
     children: P.node.isRequired,
   };
+
+  
+  //prevent jest error
+export default Button;
