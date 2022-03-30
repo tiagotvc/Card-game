@@ -2,8 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getCardsData } from '../../feature/cardsService/cardsService';
 import { changeName } from '../../feature/nameService/nameService';
-
-import { useDispatch, useSelector } from 'react-redux';
+import { useAppDispatch } from '../../feature/redux-hooks';
 import * as Styled from './styles';
 
 import { Heading } from '../../components/Heading/Heading';
@@ -11,7 +10,7 @@ import { Button } from '../../components/Button/Button';
 
 export const Home = () => {
     let navigate = useNavigate();
-    const dispatch = useDispatch();
+    const dispatch = useAppDispatch();
 
    const handlerCardsRedux = async () => {
         await dispatch(getCardsData());
